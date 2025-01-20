@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+  </style>
+  <title>Kanban task management web app</title>
+</head>
+<body>
+  <div class="main">
+
+    <div class="slider">
+      <div class="logo">
+          <img src="assets/logo-light.svg" alt="logo">
+      </div>
+      <ul class="boards">
+        <li class="board-header">ALL BOARDS</li>
+      </ul>
+      <button class="create-new-board-btn">
+        <span>
+          <img src="assets/icon-board.svg" alt="board-icon">
+        </span>
+        +Create new Board
+      </button>
+    </div>
+
+    <div class="kanban-container">
+      <div class="kanban-header">
+        <h1>Platform Launch</h1>
+        <button class="add-new-task-btn">Add New Task</button>
+      </div>
+    </div>
+
+    <div class="add-new-board-container hidden">
+      <h2>Add New Board</h2>
+      <div class="column">
+      <label for="board-name">Name</label>
+      <input type="text"
+             placeholder="e.g. Web Design"
+             id="board-name"
+      />
+      </div>
+
+        <div class="columns-container column">
+        </div>
+        <button class="add-new-column-btn">+Add New Column</button>
+        <button class="create-new-board-btn-modal">Create New Board</button>
+        </div>
+    <div class="overlay hidden"></div>
+</div>
+<script src="src/script.js"></script>
+</body>
+</html>
